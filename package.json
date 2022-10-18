@@ -1,0 +1,11 @@
+{
+  "name": "test_sass",
+  "version": "1.0.0",
+  "description": "Un test pour sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/layout.scss:./assets/css/layout.css ./assets/scss/modules.scss:./assets/css/modules.css ./assets/scss/state.scss:./assets/css/state.css ./assets/scss/themes.scss:./assets/css/themes.css"
+  },
+  "author": "SM",
+  "license": "ISC"
+}
