@@ -29,7 +29,7 @@ if (isset($_POST['add']) && !empty($_POST['title']) && !empty($_POST['url'])) {
       <div class="container h-100">
         <div class="row justify-content-center h-50">
           <div class="col-md-6 shadow p-3 pt-5">
-            <h2 class="mb-3">Éditer le lien <?= $link['title'] ?></h2>
+            <h2 class="mb-3">Éditer le lien vers <?= $link['title'] ?></h2>
             <div class="mb-3">
               <form action="index.php" method="post">
                 <div class="mb-3">

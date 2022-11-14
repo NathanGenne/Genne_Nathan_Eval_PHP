@@ -133,8 +133,8 @@ function delete_link($link_id)
     $db = db_connect();
 
     $sql = <<<EOD
-    DELETE FROM `links`
-    WHERE `link_id` = :input_id
+    DELETE FROM links
+    WHERE link_id = :input_id
     EOD;
     
     $delete_link = $db->prepare($sql);
