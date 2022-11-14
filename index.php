@@ -69,8 +69,10 @@ $links = get_all_link();
             <li class="list-group-item d-flex justify-content-between align-items-center">
               <a href="<?= $link['url'] ?>"><?= $link['title'] ?></a>
               <span>
-                <i class="fa-regular fa-pen-to-square me-1 text-warning"></i>
-                <a onclick="<?php delete_link($link['link_id']); ?>">
+                <a href="edit-link.php?id=<?= $link['link_id'] ?>">
+                  <i class="fa-regular fa-pen-to-square me-1 text-warning"></i>
+                </a>
+                <a onclick="<?php /* delete_link($link['link_id']); */ ?>">
                   <i class="fa-solid fa-trash ms-1 text-danger"></i>
                 </a>
               </span>

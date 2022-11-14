@@ -86,17 +86,16 @@ function update_link($data)
 
     $sql = <<<EOD
     UPDATE `links` 
-    SET `link_id` = :input_id,
-        `title` = :input_title,
-        `url` = :input_url
+    SET `title` = :input_title,
+        `url`   = :input_url
     WHERE `link_id` = :input_id
     EOD;
     
     $update_link = $db->prepare($sql);
 
-    $update_link->bindValue(':input_id', $data['link_id']);
-    $update_link->bindValue(':input_title', $data['title']);
-    $update_link->bindValue(':input_url', $data['url']);
+    $update_link->bindValue(':input_id', $data['0']);
+    $update_link->bindValue(':input_title', $data['1']);
+    $update_link->bindValue(':input_url', $data['2']);
 
     $update_link->execute();
 }
